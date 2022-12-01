@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-30T22:52:01 IST" name="Default suite" finished-at="2022-11-30T22:52:08 IST" duration-ms="6934">
+  <suite started-at="2022-12-01T14:03:15 IST" name="Default suite" finished-at="2022-12-01T14:03:26 IST" duration-ms="11530">
     <groups>
     </groups>
-    <test started-at="2022-11-30T22:52:01 IST" name="Default test" finished-at="2022-11-30T22:52:08 IST" duration-ms="6934">
-      <class name="automation.fb.facebookLoginPage">
-        <test-method signature="loginPageCssSelecotor()[pri:0, instance:automation.fb.facebookLoginPage@50b472aa]" started-at="2022-11-30T22:52:01 IST" name="loginPageCssSelecotor" finished-at="2022-11-30T22:52:08 IST" duration-ms="6902" status="PASS">
+    <test started-at="2022-12-01T14:03:15 IST" name="Default test" finished-at="2022-12-01T14:03:26 IST" duration-ms="11530">
+      <class name="automation.fb.FacebookSignupPage">
+        <test-method is-config="true" signature="driver()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:15 IST" name="driver" finished-at="2022-12-01T14:03:16 IST" duration-ms="1517" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageCssSelecotor -->
-      </class> <!-- automation.fb.facebookLoginPage -->
+        </test-method> <!-- driver -->
+        <test-method signature="signupPage()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:16 IST" name="signupPage" finished-at="2022-12-01T14:03:24 IST" duration-ms="7915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupPage -->
+        <test-method signature="xpath_contains_function()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:24 IST" name="xpath_contains_function" finished-at="2022-12-01T14:03:25 IST" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpath_contains_function -->
+        <test-method signature="xpath_startwith()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:25 IST" name="xpath_startwith" finished-at="2022-12-01T14:03:25 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpath_startwith -->
+        <test-method signature="xpath_text_function()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:25 IST" name="xpath_text_function" finished-at="2022-12-01T14:03:26 IST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpath_text_function -->
+      </class> <!-- automation.fb.FacebookSignupPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -26,11 +26,6 @@ public class FacebookSignupPage {
 	@Test
 	public void signupPage() throws InterruptedException, IOException {
 
-//		System.setProperty("webdriver.chrome.driver",
-//				"E:\\All software for development\\softwares\\chromedriver_win32\\chromedriver.exe");
-//
-//		WebDriver driver = new ChromeDriver();
-
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 
@@ -71,13 +66,13 @@ public class FacebookSignupPage {
 		File srcFile = ts.getScreenshotAs(OutputType.FILE);
 		File destFile = new File(".//screenshots//" + "signup_page.png");
 		Files.copy(srcFile, destFile);
-		driver.close();
+//		driver.close();
 	}
 
 	
 //	-------text() function---------------------------------->
 	@Test
-	public void xpath_text_function() throws InterruptedException {
+	public void xpath_text_function(){
 
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
@@ -93,7 +88,7 @@ public class FacebookSignupPage {
 		driver.manage().window().maximize();
 
 		driver.findElement(By.xpath("//a[contains(text(),'Create New Account')]")).click();	
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 	}
 	
 //	------starts-with()------------------------------------->
@@ -101,7 +96,7 @@ public class FacebookSignupPage {
 	public void xpath_startwith() throws InterruptedException {
 		driver.findElement(By.xpath("//a[starts-with(text(),'Create New Account')]")).click();
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 		
 	}
 }
