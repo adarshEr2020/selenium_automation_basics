@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.fb.FacebookSignupPage">
+      <class name="automation.fb.Frame">
         <methods>
           <include name="driver"/>
-          <include name="xpath_startwith"/>
+          <include name="frame"/>
         </methods>
-      </class> <!-- automation.fb.FacebookSignupPage -->
+      </class> <!-- automation.fb.Frame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

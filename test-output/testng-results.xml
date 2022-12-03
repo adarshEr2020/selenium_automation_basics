@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T14:03:15 IST" name="Default suite" finished-at="2022-12-01T14:03:26 IST" duration-ms="11530">
+  <suite started-at="2022-12-03T13:41:47 IST" name="Default suite" finished-at="2022-12-03T13:42:35 IST" duration-ms="47762">
     <groups>
     </groups>
-    <test started-at="2022-12-01T14:03:15 IST" name="Default test" finished-at="2022-12-01T14:03:26 IST" duration-ms="11530">
-      <class name="automation.fb.FacebookSignupPage">
-        <test-method is-config="true" signature="driver()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:15 IST" name="driver" finished-at="2022-12-01T14:03:16 IST" duration-ms="1517" status="PASS">
+    <test started-at="2022-12-03T13:41:47 IST" name="Default test" finished-at="2022-12-03T13:42:35 IST" duration-ms="47762">
+      <class name="automation.fb.Frame">
+        <test-method is-config="true" signature="driver()[pri:0, instance:automation.fb.Frame@192d43ce]" started-at="2022-12-03T13:41:47 IST" name="driver" finished-at="2022-12-03T13:41:49 IST" duration-ms="1731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="signupPage()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:16 IST" name="signupPage" finished-at="2022-12-01T14:03:24 IST" duration-ms="7915" status="PASS">
+        <test-method signature="frameUsingIdAttribute()[pri:0, instance:automation.fb.Frame@192d43ce]" started-at="2022-12-03T13:41:49 IST" name="frameUsingIdAttribute" finished-at="2022-12-03T13:42:00 IST" duration-ms="11449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupPage -->
-        <test-method signature="xpath_contains_function()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:24 IST" name="xpath_contains_function" finished-at="2022-12-01T14:03:25 IST" duration-ms="973" status="PASS">
+        </test-method> <!-- frameUsingIdAttribute -->
+        <test-method signature="frameUsingIdexAttribute()[pri:0, instance:automation.fb.Frame@192d43ce]" started-at="2022-12-03T13:42:00 IST" name="frameUsingIdexAttribute" finished-at="2022-12-03T13:42:12 IST" duration-ms="11459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xpath_contains_function -->
-        <test-method signature="xpath_startwith()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:25 IST" name="xpath_startwith" finished-at="2022-12-01T14:03:25 IST" duration-ms="42" status="PASS">
+        </test-method> <!-- frameUsingIdexAttribute -->
+        <test-method signature="frameUsingNameAttribute()[pri:0, instance:automation.fb.Frame@192d43ce]" started-at="2022-12-03T13:42:12 IST" name="frameUsingNameAttribute" finished-at="2022-12-03T13:42:23 IST" duration-ms="11511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xpath_startwith -->
-        <test-method signature="xpath_text_function()[pri:0, instance:automation.fb.FacebookSignupPage@192d43ce]" started-at="2022-12-01T14:03:25 IST" name="xpath_text_function" finished-at="2022-12-01T14:03:26 IST" duration-ms="1046" status="PASS">
+        </test-method> <!-- frameUsingNameAttribute -->
+        <test-method signature="frameUsingWebElement()[pri:0, instance:automation.fb.Frame@192d43ce]" started-at="2022-12-03T13:42:23 IST" name="frameUsingWebElement" finished-at="2022-12-03T13:42:35 IST" duration-ms="11573" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xpath_text_function -->
-      </class> <!-- automation.fb.FacebookSignupPage -->
+        </test-method> <!-- frameUsingWebElement -->
+      </class> <!-- automation.fb.Frame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

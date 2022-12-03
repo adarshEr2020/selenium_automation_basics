@@ -69,15 +69,14 @@ public class FacebookSignupPage {
 //		driver.close();
 	}
 
-	
 //	-------text() function---------------------------------->
 	@Test
-	public void xpath_text_function(){
+	public void xpath_text_function() {
 
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.xpath("//a[text()='Create New Account']")).click();	 
+		driver.findElement(By.xpath("//a[text()='Create New Account']")).click();
 
 	}
 
@@ -87,16 +86,37 @@ public class FacebookSignupPage {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.xpath("//a[contains(text(),'Create New Account')]")).click();	
+		driver.findElement(By.xpath("//a[contains(text(),'Create New Account')]")).click();
 //		Thread.sleep(3000);
 	}
 	
+	@Test
+	public void xpath_last() throws InterruptedException {
+		driver.findElement(By.xpath("(//a)[last()]")).click();
+		driver.findElement(By.xpath("(//a)[last()-3]")).click();
+		driver.manage().window().maximize();
+//		Thread.sleep(3000);
+
+	}
+
 //	------starts-with()------------------------------------->
+
 	@Test
 	public void xpath_startwith() throws InterruptedException {
 		driver.findElement(By.xpath("//a[starts-with(text(),'Create New Account')]")).click();
 		driver.manage().window().maximize();
 //		Thread.sleep(3000);
-		
+
 	}
+	
+//	------ends-with()------------------------------------->
+
+	@Test
+	public void xpath_endstwith() throws InterruptedException {
+		driver.findElement(By.xpath("//a[ends-with(text(),'New Account')]")).click();
+		driver.manage().window().maximize();
+//		Thread.sleep(3000);
+
+	}
+	
 }
