@@ -1,4 +1,4 @@
-package automation.fb;
+package automation.javascriptexecutor;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -28,52 +28,45 @@ public class JavascriptExecutor {
 //		 enter "admin" in first textbox using javascript
 		js.executeScript("document.getElementById('t1').value='adarsh'");
 		Thread.sleep(2000);
-
 		// clear the value
 		js.executeScript("document.getElementById('t2').value=''");
 		Thread.sleep(2000);
 		// enter "login"
 		js.executeScript("document.getElementById('t2').value='login'");
 		Thread.sleep(2000);
-
 		// change the second text box to button type
 		js.executeScript("document.getElementById('t2').type='button'");
 		Thread.sleep(2000);
 	}
 
 	@Test
-	public static void ScrollUpandDow() throws InterruptedException {
+	public static void scrollUpandDown() throws InterruptedException {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		ChromeDriver js = driver;
 
 		// scroll down on the webpage
-		js.executeScript("window.scrollBy(0, 1000)");
+		js.executeScript("window.scrollBy(0, 200)");
 		Thread.sleep(3000);
-
 		// scroll up on the webpage
-		js.executeScript("window.scrollBy(0, -1000)");
+		js.executeScript("window.scrollBy(0, -100)");
 		Thread.sleep(3000);
 		driver.close();
 	}
 
 	@Test
-	public static void ScrollUpandDowntospecificElementonWebpage() throws InterruptedException {
+	public static void scrollUpandDowntospecificElementonWebpage() throws InterruptedException {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		ChromeDriver js = driver;
-		
-		WebElement ele  = driver.findElement(By.id("u_0_5_sT"));
-		
+//		WebElement ele  = driver.findElement(By.name("login"));
+
 		// find the log in 
-//		WebElement ele = driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));
-		
+		WebElement ele = driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));
 		// get the X-coordinate
 		int x = ele.getLocation().getX();
-
 		// get the Y-coordinate 
 		int y = ele.getLocation().getY();
-
 		// Scroll to log in element’s x and y coordinate
 		js.executeScript("window.scrollBy(" + x + ", " + y + ")");
 		Thread.sleep(3000);

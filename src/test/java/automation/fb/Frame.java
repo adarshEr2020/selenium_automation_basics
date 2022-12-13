@@ -107,6 +107,6 @@ public class Frame {
 		Thread.sleep(2000);
 		driver.findElement(By.id("t2")).sendKeys("outer frame input");
 		Thread.sleep(2000);
-		driver.quit();
+		driver.close();
 		}
 }
